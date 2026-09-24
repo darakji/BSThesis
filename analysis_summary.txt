@@ -1,0 +1,42 @@
+Li-LLZO interface stability analysis summary
+===========================================
+
+Trajectory file                     : /storage/users/phanim/mehuldarak/long_MD/md_cif2_NVT_onlyLG_298K_interface/traj/fixed_Li_100_slab__longMDstack_v2__LLZO_011_La_code71_sto_relaxed_T298K_langevin.traj
+Total frames in file                : 4002
+Stride used                         : 10
+Analyzed frames                     : 401
+Interface normal axis               : z
+Time between saved frames (fs)      : 50.0
+Metal side                          : upper
+Tracked metal Li atoms              : 469
+Tracked oxide Li atoms              : 571
+Framework atoms                     : 612
+O atoms                             : 432
+Li-O classifier cutoff (Å)          : 2.6
+Penetration cutoff (Å)              : 2.0
+Li-O coordination cutoff (Å)        : 2.6
+Li-Li coordination cutoff (Å)       : 3.0
+
+Overall minimum tracked metal-Li distances to LLZO species:
+  Li_metal-La             : 2.8417 Å
+  Li_metal-Zr             : 2.6549 Å
+  Li_metal-O              : 1.6562 Å
+
+Last-quarter trajectory stability statistics:
+  framework RMSD mean ± std         : 0.2849 ± 0.0379 Å
+  framework MSD mean ± std          : 0.0826 ± 0.0216 Å^2
+  oxide thickness mean ± std        : 82.8123 ± 0.1067 Å
+  top roughness mean ± std          : 3.7491 ± 0.0177 Å
+  penetration fraction mean ± std   : 0.0000 ± 0.0000
+
+Penetration statistics over all analyzed frames:
+  max penetration depth observed    : 1.3961 Å
+  mean positive penetration depth   : 0.9187 Å
+  mean penetration fraction         : 0.0000
+
+Simple heuristic assessment:
+  framework appears stabilized?     : YES
+  interface geometry stabilized?    : YES
+
+Interpretation: LLZO framework and interface shape are approximately stable;
+Li motion/penetration can be interpreted on top of a largely stabilized interface.

@@ -1,0 +1,1099 @@
+%% ============================================================
+%% ref.bib — cleaned and expanded
+%% CHANGES vs original:
+%%   - Added Canepa2018LLZO (was missing entirely)
+%%   - Added Musaelian2023Allegro (was sparse Allegro2023)
+%%   - Added Vandermause2020FLARE (was sparse FLARE2020)
+%%   - Fixed Behler2007 with DOI
+%%   - Fixed Shapeev2016 with DOI
+%%   - Fixed LoRA2021 with proper arXiv details
+%%   - Replaced sparse placeholder keys used in lit survey
+%%     with proper full entries (NequIP2022 → Batzner2022NequIP
+%%     etc.) by removing duplicate placeholders; tex updated to
+%%     use the full keys
+%%   - Softening2024 and ErrorMetrics2023 removed (duplicates of
+%%     Deng2025Softening and Liu2023Discrepancies respectively)
+%%   - Added missing URLs/DOIs to several existing entries
+%% ============================================================
+
+%% ---- Core MLIP architectures --------------------------------
+
+@article{Bartok2010GAP,
+  title   = {Gaussian Approximation Potentials: The Accuracy of Quantum Mechanics, without the Electrons},
+  author  = {Bart{\'o}k, Albert P. and Payne, Mike C. and Kondor, Risi and Cs{\'a}nyi, G{\'a}bor},
+  journal = {Physical Review Letters},
+  year    = {2010},
+  volume  = {104},
+  number  = {13},
+  pages   = {136403},
+  doi     = {10.1103/PhysRevLett.104.136403},
+  url     = {https://doi.org/10.1103/PhysRevLett.104.136403}
+}
+
+@article{Bartok2013SOAP,
+  title   = {On representing chemical environments},
+  author  = {Bart{\'o}k, Albert P. and Kondor, Risi and Cs{\'a}nyi, G{\'a}bor},
+  journal = {Physical Review B},
+  year    = {2013},
+  volume  = {87},
+  number  = {18},
+  pages   = {184115},
+  doi     = {10.1103/PhysRevB.87.184115},
+  url     = {https://doi.org/10.1103/PhysRevB.87.184115}
+}
+
+%% CHANGED: was sparse; added journal, volume, pages, DOI, URL
+@article{Behler2007,
+  title   = {Generalized Neural-Network Representation of High-Dimensional Potential-Energy Surfaces},
+  author  = {Behler, J{\"o}rg and Parrinello, Michele},
+  journal = {Physical Review Letters},
+  year    = {2007},
+  volume  = {98},
+  number  = {14},
+  pages   = {146401},
+  doi     = {10.1103/PhysRevLett.98.146401},
+  url     = {https://doi.org/10.1103/PhysRevLett.98.146401}
+}
+
+%% CHANGED: was sparse; added volume, pages, DOI, URL
+@article{Shapeev2016,
+  title   = {Moment Tensor Potentials: A Class of Systematically Improvable Interatomic Potentials},
+  author  = {Shapeev, Alexander V.},
+  journal = {Multiscale Modeling \& Simulation},
+  year    = {2016},
+  volume  = {14},
+  number  = {3},
+  pages   = {1153--1173},
+  doi     = {10.1137/15M1054183},
+  url     = {https://doi.org/10.1137/15M1054183}
+}
+
+@article{Thompson2015SNAP,
+  title   = {Spectral neighbor analysis method for automated generation of quantum-accurate interatomic potentials},
+  author  = {Thompson, Aidan P. and Swiler, Laura P. and Trott, Christian R. and Foiles, Stephen M. and Tucker, Graeme J.},
+  journal = {Journal of Computational Physics},
+  year    = {2015},
+  volume  = {285},
+  pages   = {316--330},
+  doi     = {10.1016/j.jcp.2014.12.018},
+  url     = {https://doi.org/10.1016/j.jcp.2014.12.018}
+}
+
+@article{Batzner2022NequIP,
+  title   = {{E(3)}-equivariant graph neural networks for data-efficient and accurate interatomic potentials},
+  author  = {Batzner, Simon and Musaelian, Albert and Sun, Lixin and Geiger, Mario and Mailoa, Jonathan P. and Kornbluth, Mordechai and Molinari, Nicola and Smidt, Tess E. and Kozinsky, Boris},
+  journal = {Nature Communications},
+  year    = {2022},
+  volume  = {13},
+  pages   = {2453},
+  doi     = {10.1038/s41467-022-29939-5},
+  url     = {https://doi.org/10.1038/s41467-022-29939-5}
+}
+
+@inproceedings{Batatia2022MACE,
+  title     = {{MACE}: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields},
+  author    = {Batatia, Ilyes and Kov{\'a}cs, D{\'a}vid P{\'e}ter and Simm, Gregor N. C. and Ortner, Christoph and Cs{\'a}nyi, G{\'a}bor},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2022},
+  note      = {Preprint: arXiv:2206.07697},
+  doi       = {10.48550/arXiv.2206.07697},
+  url       = {https://arxiv.org/abs/2206.07697}
+}
+
+%% CHANGED: was sparse Allegro2023; replaced with full entry
+@article{Musaelian2023Allegro,
+  title   = {Learning local equivariant representations for large-scale atomistic dynamics},
+  author  = {Musaelian, Albert and Batzner, Simon and Johansson, Anders and Sun, Lixin and Owen, Cameron J. and Kornbluth, Mordechai and Kozinsky, Boris},
+  journal = {Nature Communications},
+  year    = {2023},
+  volume  = {14},
+  pages   = {579},
+  doi     = {10.1038/s41467-023-36329-y},
+  url     = {https://doi.org/10.1038/s41467-023-36329-y}
+}
+
+@article{Batatia2025DesignSpace,
+  title   = {The design space of {E(3)}-equivariant atom-centred interatomic potentials},
+  author  = {Batatia, Ilyes and Batzner, Simon and Kov{\'a}cs, D{\'a}vid P{\'e}ter and Musaelian, Albert and Simm, Gregor N. C. and Drautz, Ralf and Ortner, Christoph and Kozinsky, Boris and Cs{\'a}nyi, G{\'a}bor},
+  journal = {Nature Machine Intelligence},
+  year    = {2025},
+  volume  = {7},
+  number  = {1},
+  pages   = {56--67},
+  doi     = {10.1038/s42256-024-00956-x},
+  url     = {https://doi.org/10.1038/s42256-024-00956-x}
+}
+
+@article{Zhang2018DPMD,
+  title   = {Deep Potential Molecular Dynamics: A Scalable Model with the Accuracy of Quantum Mechanics},
+  author  = {Zhang, Linfeng and Han, Jiequn and Wang, Han and Car, Roberto and E, Weinan},
+  journal = {Physical Review Letters},
+  year    = {2018},
+  volume  = {120},
+  number  = {14},
+  pages   = {143001},
+  doi     = {10.1103/PhysRevLett.120.143001},
+  url     = {https://doi.org/10.1103/PhysRevLett.120.143001}
+}
+
+@article{Zhang2019DPGEN,
+  title   = {Active learning of uniformly accurate interatomic potentials for materials simulation},
+  author  = {Zhang, Linfeng and Lin, De-Ye and Wang, Han and Car, Roberto and E, Weinan},
+  journal = {Physical Review Materials},
+  year    = {2019},
+  volume  = {3},
+  number  = {2},
+  pages   = {023804},
+  doi     = {10.1103/PhysRevMaterials.3.023804},
+  url     = {https://doi.org/10.1103/PhysRevMaterials.3.023804}
+}
+
+%% CHANGED: was sparse FLARE2020; replaced with full entry
+@article{Vandermause2020FLARE,
+  title   = {On-the-fly active learning of interpretable {Bayesian} force fields for atomistic rare events},
+  author  = {Vandermause, Jonathan and Torrisi, Steven B. and Batzner, Simon and Xie, Yu and Sun, Lixin and Kolpak, Alexie M. and Kozinsky, Boris},
+  journal = {npj Computational Materials},
+  year    = {2020},
+  volume  = {6},
+  pages   = {20},
+  doi     = {10.1038/s41524-020-0283-z},
+  url     = {https://doi.org/10.1038/s41524-020-0283-z}
+}
+
+%% ---- Universal / Foundation MLIPs ---------------------------
+
+@article{Chen2022M3GNet,
+  title   = {A universal graph deep learning interatomic potential for the periodic table},
+  author  = {Chen, Chi and Ong, Shyue Ping},
+  journal = {Nature Computational Science},
+  year    = {2022},
+  volume  = {2},
+  number  = {11},
+  pages   = {718--728},
+  doi     = {10.1038/s43588-022-00349-3},
+  url     = {https://doi.org/10.1038/s43588-022-00349-3}
+}
+
+@misc{Batatia2023FoundationMACE,
+  title        = {A foundation model for atomistic materials chemistry},
+  author       = {Batatia, Ilyes and Benner, Philipp and Chiang, Yuan and Elena, Alin M. and Kov{\'a}cs, D{\'a}vid P. and Riebesell, Janosh and Advincula, Xavier R. and Asta, Mark and Avaylon, Matthew and Baldwin, William J. and others},
+  year         = {2023},
+  note         = {preprint},
+  eprint       = {2401.00096},
+  archivePrefix= {arXiv},
+  primaryClass = {physics.chem-ph},
+  doi          = {10.48550/arXiv.2401.00096},
+  url          = {https://arxiv.org/abs/2401.00096}
+}
+
+%% ---- Validation and error metrics ---------------------------
+
+@article{Deng2025Softening,
+  title   = {Systematic softening in universal machine learning interatomic potentials},
+  author  = {Deng, Bowen and Choi, Yunyeong and Zhong, Peichen and Riebesell, Janosh and Anand, Shashwat and Li, Zhuohan and Jun, KyuJung and Persson, Kristin A. and Ceder, Gerbrand},
+  journal = {npj Computational Materials},
+  year    = {2025},
+  volume  = {11},
+  pages   = {9},
+  doi     = {10.1038/s41524-024-01500-6},
+  url     = {https://doi.org/10.1038/s41524-024-01500-6}
+}
+
+@article{Morrow2023Validate,
+  title   = {How to validate machine-learned interatomic potentials},
+  author  = {Morrow, Joe D. and Gardner, John L. A. and Deringer, Volker L.},
+  journal = {The Journal of Chemical Physics},
+  year    = {2023},
+  volume  = {158},
+  number  = {12},
+  pages   = {121501},
+  doi     = {10.1063/5.0139611},
+  url     = {https://doi.org/10.1063/5.0139611}
+}
+
+@article{Liu2023Discrepancies,
+  title   = {Discrepancies and error evaluation metrics for machine learning interatomic potentials},
+  author  = {Liu, Yunsheng and He, Xingfeng and Mo, Yifei},
+  journal = {npj Computational Materials},
+  year    = {2023},
+  volume  = {9},
+  pages   = {174},
+  doi     = {10.1038/s41524-023-01123-3},
+  url     = {https://doi.org/10.1038/s41524-023-01123-3}
+}
+
+@article{Dembitskiy2025LiTraj,
+  title   = {Benchmarking machine learning models for predicting lithium ion migration},
+  author  = {Dembitskiy, Artem D. and Humonen, Innokentiy S. and Eremin, Roman A. and Aksyonov, Dmitry A. and Fedotov, Stanislav S. and Budennyy, Semen A.},
+  journal = {npj Computational Materials},
+  year    = {2025},
+  volume  = {11},
+  pages   = {131},
+  doi     = {10.1038/s41524-025-01571-z},
+  url     = {https://doi.org/10.1038/s41524-025-01571-z}
+}
+
+@misc{Fragapane2025LiPS25,
+  title        = {{Li-P-S} Electrolyte Materials as a Benchmark for Machine-Learned Interatomic Potentials ({LiPS-25})},
+  author       = {Fragapane, Natascia L. and Deringer, Volker L.},
+  year         = {2025},
+  note         = {preprint},
+  eprint       = {2511.16569},
+  archivePrefix= {arXiv},
+  primaryClass = {cond-mat.mtrl-sci},
+  doi          = {10.48550/arXiv.2511.16569},
+  url          = {https://arxiv.org/abs/2511.16569}
+}
+
+%% ---- Active learning ----------------------------------------
+
+@article{Kang2025ActiveLearningReliability,
+  title   = {Accelerating the training and improving the reliability of machine-learned interatomic potentials for strongly anharmonic materials through active learning},
+  author  = {Kang, Kisung and Purcell, Thomas A. R. and Carbogno, Christian and Scheffler, Matthias},
+  journal = {Physical Review Materials},
+  year    = {2025},
+  volume  = {9},
+  number  = {6},
+  pages   = {063801},
+  doi     = {10.1103/PhysRevMaterials.9.063801},
+  url     = {https://doi.org/10.1103/PhysRevMaterials.9.063801}
+}
+
+%% ---- Long-range electrostatics MLIPs -----------------------
+
+@article{Ko2021FourthGenHDNNP,
+  title   = {A fourth-generation high-dimensional neural network potential with accurate electrostatics including non-local charge transfer},
+  author  = {Ko, Tsz Wai and Finkler, Jonas A. and Goedecker, Stefan and Behler, J{\"o}rg},
+  journal = {Nature Communications},
+  year    = {2021},
+  volume  = {12},
+  pages   = {398},
+  doi     = {10.1038/s41467-020-20427-2},
+  url     = {https://doi.org/10.1038/s41467-020-20427-2}
+}
+
+@article{Shaidu2024VQEqElectrostatics,
+  title   = {Incorporating long-range electrostatics in neural network potentials via variational charge equilibration from shortsighted ingredients},
+  author  = {Shaidu, Yusuf and Pellegrini, Franco and K{\"u}{\c{c}}{\"u}kbenli, Emine and Lot, Ruggero and de Gironcoli, Stefano},
+  journal = {npj Computational Materials},
+  year    = {2024},
+  volume  = {10},
+  pages   = {21},
+  doi     = {10.1038/s41524-024-01225-6},
+  url     = {https://doi.org/10.1038/s41524-024-01225-6}
+}
+
+@article{Unke2019PhysNet,
+  title   = {{PhysNet}: A Neural Network for Predicting Energies, Forces, Dipole Moments, and Partial Charges},
+  author  = {Unke, Oliver T. and Meuwly, Markus},
+  journal = {Journal of Chemical Theory and Computation},
+  year    = {2019},
+  volume  = {15},
+  number  = {6},
+  pages   = {3678--3693},
+  doi     = {10.1021/acs.jctc.9b00181},
+  url     = {https://doi.org/10.1021/acs.jctc.9b00181}
+}
+
+%% ---- Li–LLZO interface: DFT and MLIP studies ---------------
+
+%% CHANGED: added this entry (was missing; cited as canepa2018 in tex)
+@article{Canepa2018LLZO,
+  title   = {Particle Morphology and Lithium Segregation to Surfaces of the {Li$_7$La$_3$Zr$_2$O$_{12}$} Solid Electrolyte},
+  author  = {Canepa, Pieremanuele and Dawson, James A. and Sai Gautam, Gopalakrishnan and Statham, Jacqueline M. and Parker, Stephen C. and Islam, M. Saiful},
+  journal = {Chemistry of Materials},
+  year    = {2018},
+  volume  = {30},
+  number  = {9},
+  pages   = {3019--3027},
+  doi     = {10.1021/acs.chemmater.8b00649},
+  url     = {https://doi.org/10.1021/acs.chemmater.8b00649}
+}
+
+@article{You2024LLZO_DP_PCA,
+  title   = {Principal component analysis enables the design of deep learning potential precisely capturing {LLZO} phase transitions},
+  author  = {You, Yiwei and Zhang, Dexin and Wu, Fulun and Cao, Xinrui and Sun, Yang and Zhu, Zi-Zhong and Wu, Shunqing},
+  journal = {npj Computational Materials},
+  year    = {2024},
+  volume  = {10},
+  pages   = {57},
+  doi     = {10.1038/s41524-024-01240-7},
+  url     = {https://doi.org/10.1038/s41524-024-01240-7}
+}
+
+@article{Iwasaki2024UNNP_LLZOLi,
+  title   = {Universal-neural-network-potential molecular dynamics for lithium metal and garnet-type solid electrolyte interface},
+  author  = {Iwasaki, Rinon and Tanibata, Naoto and Takeda, Hayami and Nakayama, Masanobu},
+  journal = {Communications Materials},
+  year    = {2024},
+  volume  = {5},
+  pages   = {148},
+  doi     = {10.1038/s43246-024-00595-0},
+  url     = {https://doi.org/10.1038/s43246-024-00595-0}
+}
+
+@article{Kim2024LLZO_LCO_MLIP,
+  title   = {Probing degradation at solid-state battery interfaces using machine-learning interatomic potential},
+  author  = {Kim, Kwangnam and Adelstein, Nicole and Dive, Aniruddha and Grieder, Andrew and Kang, ShinYoung and Wood, Brandon C. and Wan, Liwen F.},
+  journal = {Energy Storage Materials},
+  year    = {2024},
+  volume  = {73},
+  pages   = {103842},
+  doi     = {10.1016/j.ensm.2024.103842},
+  url     = {https://doi.org/10.1016/j.ensm.2024.103842}
+}
+
+@article{Burov2024LiLLZOChargeTransfer,
+  title   = {Mechanism of {Li$^{+}$} charge transfer at {Li}/{Li$_7$La$_3$Zr$_2$O$_{12}$} interfaces: A density functional theory study},
+  author  = {Burov, Arseniy S. and Boev, Anton O. and Abakumov, Artem M. and Aksyonov, Dmitry A.},
+  journal = {Physical Review B},
+  year    = {2024},
+  volume  = {109},
+  number  = {4},
+  pages   = {045305},
+  doi     = {10.1103/PhysRevB.109.045305},
+  url     = {https://doi.org/10.1103/PhysRevB.109.045305}
+}
+
+%% CHANGED: key was Iwasaki2021 in tex (wrong year); correct key is used here
+@article{Iwasaki2022DFT_Li_LLZO_PSSB,
+  title   = {Density Functional Theory Studies on {Li} Metal Electrode/{Garnet-Type} {Li$_7$La$_3$Zr$_2$O$_{12}$} Solid Electrolyte Interfaces for Application in All-Solid-State Batteries},
+  author  = {Iwasaki, Rinon and Ishida, Kunihiro and Yasuda, Risa and Nakano, Koki and Tanibata, Naoto and Takeda, Hayami and Nakayama, Masanobu and Watanabe, Naoki},
+  journal = {physica status solidi (b)},
+  year    = {2022},
+  volume  = {259},
+  number  = {2},
+  pages   = {2100546},
+  doi     = {10.1002/pssb.202100546},
+  url     = {https://doi.org/10.1002/pssb.202100546}
+}
+
+@article{Zhang2025DendritePenetration,
+  title   = {Atomic mechanism of lithium dendrite penetration in solid electrolytes},
+  author  = {Zhang, Bowen and Yuan, Botao and Yan, Xin and Han, Xiao and Zhang, Jiawei and Tan, Huifeng and Wang, Changuo and Yan, Pengfei and Gao, Huajian and Liu, Yuanpeng},
+  journal = {Nature Communications},
+  year    = {2025},
+  volume  = {16},
+  pages   = {1906},
+  doi     = {10.1038/s41467-025-57259-x},
+  url     = {https://doi.org/10.1038/s41467-025-57259-x}
+}
+
+%% ---- Misc / guides ------------------------------------------
+
+@misc{MLIPGuide2025,
+  title        = {A practical guide to machine learning interatomic potentials},
+  author       = {Ryan, Kyle and others},
+  year         = {2025},
+  howpublished = {\url{https://ceder.berkeley.edu/publications/2025_Ryan_MLP-guide.pdf}}
+}
+
+%% CHANGED: was sparse with no details; added proper arXiv entry
+@misc{LoRA2021,
+  title        = {{LoRA}: Low-Rank Adaptation of Large Language Models},
+  author       = {Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zifeng and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  year         = {2021},
+  eprint       = {2106.09685},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  doi          = {10.48550/arXiv.2106.09685},
+  url          = {https://arxiv.org/abs/2106.09685},
+  note         = {Published at ICLR 2022}
+}
+
+%% ---- Sparse placeholder entries retained for now -----------
+%% NOTE: The following entries could not be uniquely identified
+%% from the information available in the thesis. They are kept
+%% with their original keys so compilation does not break, but
+%% should be replaced with proper bibliographic data before
+%% final submission.
+
+
+@article{UncertaintyDynamics2023,
+  title   = {Uncertainty-aware molecular dynamics from Bayesian active learning},
+  author  = {Xie, Yu and Vandermause, Jonathan and Ramakers, Senja and others},
+  journal = {npj Computational Materials},
+  year    = {2023},
+  volume  = {9},
+  pages   = {36},
+  doi     = {10.1038/s41524-023-00988-8},
+  url     = {https://doi.org/10.1038/s41524-023-00988-8}
+}
+
+@article{UBMD2024,
+  title   = {Uncertainty-biased molecular dynamics for learning uniformly accurate interatomic potentials},
+  journal = {npj Computational Materials},
+  year    = {2024},
+  note    = {TODO: replace with proper bibliographic entry}
+}
+
+@article{LLZOInterface2024,
+  title   = {{LLZO} interface stability in all-solid-state batteries},
+  journal = {Communications Chemistry},
+  year    = {2024},
+  note    = {TODO: replace with proper bibliographic entry}
+}
+
+@article{Adhesion2021,
+  title   = {Adhesion and wettability at solid electrolyte interfaces},
+  journal = {Journal of Materials Chemistry A},
+  year    = {2021},
+  note    = {TODO: replace with proper bibliographic entry}
+}
+
+@article{Electrochem2023,
+  title   = {Electrochemical stability of solid electrolyte interfaces},
+  journal = {Journal of the Electrochemical Society},
+  year    = {2023},
+  note    = {TODO: replace with proper bibliographic entry}
+}
+
+@article{LLZOMLIP2018,
+  title   = {Machine learning interatomic potential for {LLZO}},
+  journal = {Physical Review Materials},
+  year    = {2018},
+  note    = {TODO: replace with proper bibliographic entry}
+}
+
+@article{DFTInterfaceReview2020,
+  title   = {First-principles approaches to solid-solid interfaces in batteries},
+  journal = {npj Computational Materials},
+  year    = {2020},
+  note    = {TODO: replace with proper bibliographic entry}
+}
+
+@misc{OMAT2024,
+  title        = {The {Open Materials} 2024 ({OMat24}) Inorganic Materials Dataset},
+  author       = {Barroso-Luque, Luis and others},
+  year         = {2024},
+  eprint       = {2410.12771},
+  archivePrefix= {arXiv},
+  doi          = {10.48550/arXiv.2410.12771},
+  url          = {https://arxiv.org/abs/2410.12771}
+}
+
+@article{PolarizableMLIP2025,
+  title   = {Long-range electrostatics in machine learning interatomic potentials},
+  journal = {Nature Communications},
+  year    = {2025},
+  note    = {TODO: replace with proper bibliographic entry}
+}
+
+@article{BarrierEval2026,
+  title   = {Evaluation of migration barriers with machine learning interatomic potentials},
+  journal = {Physical Chemistry Chemical Physics},
+  year    = {2026},
+  note    = {TODO: replace with proper bibliographic entry}
+}
+
+%% ============================================================
+%% NEW ENTRIES for expanded Literature Survey (Chapter 2)
+%% ============================================================
+
+%% --- LLZO material and interface physics ---
+
+@article{Murugan2007,
+  title   = {Fast Lithium Ion Conduction in Garnet-Type {Li$_7$La$_3$Zr$_2$O$_{12}$}},
+  author  = {Murugan, Ramaswamy and Thangadurai, Venkataraman and Weppner, Werner},
+  journal = {Angewandte Chemie International Edition},
+  year    = {2007},
+  volume  = {46},
+  pages   = {7778--7781},
+  doi     = {10.1002/anie.200701144},
+  url     = {https://doi.org/10.1002/anie.200701144}
+}
+
+@article{Thangadurai2014,
+  title   = {Garnet-type solid-state fast {Li} ion conductors for {Li} batteries: critical review},
+  author  = {Thangadurai, Venkataraman and Narayanan, Sumaletha and Pinzaru, Diana},
+  journal = {Chemical Society Reviews},
+  year    = {2014},
+  volume  = {43},
+  pages   = {4714--4727},
+  doi     = {10.1039/C4CS00020J},
+  url     = {https://doi.org/10.1039/C4CS00020J}
+}
+
+@article{Sharafi2017,
+  title   = {Impact of air exposure and surface chemistry on {Li}--{Li$_7$La$_3$Zr$_2$O$_{12}$} interfacial resistance},
+  author  = {Sharafi, Asma and Meyer, Harry M. and Nanda, Jagjit and Wolfenstine, Jeff and Sakamoto, Jeff},
+  journal = {Journal of Materials Chemistry A},
+  year    = {2017},
+  volume  = {5},
+  pages   = {20887--20897},
+  doi     = {10.1039/C7TA03162A},
+  url     = {https://doi.org/10.1039/C7TA03162A}
+}
+
+@article{Sharafi2017chem,
+  title   = {Surface Chemistry Mechanism of Ultra-Low Interfacial Resistance in the Solid-State Electrolyte {Li$_7$La$_3$Zr$_2$O$_{12}$}},
+  author  = {Sharafi, Asma and Kazyak, Eric and Davis, Asher L. and Yu, Seungho and Thompson, Travis and Siegel, Donald J. and Dasgupta, Neil P. and Sakamoto, Jeff},
+  journal = {Chemistry of Materials},
+  year    = {2017},
+  volume  = {29},
+  pages   = {7961--7968},
+  doi     = {10.1021/acs.chemmater.7b03002},
+  url     = {https://doi.org/10.1021/acs.chemmater.7b03002}
+}
+
+@article{Krauskopf2019,
+  title   = {Lithium-Metal Growth Kinetics on {LLZO} Garnet-Type Solid Electrolytes},
+  author  = {Krauskopf, Thorben and Dippel, Rabea and Hartmann, Hannah and Peppler, Klaus and Mogwitz, Boris and Richter, Felix H. and Zeier, Wolfgang G. and Janek, J{\"u}rgen},
+  journal = {Joule},
+  year    = {2019},
+  volume  = {3},
+  pages   = {2030--2049},
+  doi     = {10.1016/j.joule.2019.06.013},
+  url     = {https://doi.org/10.1016/j.joule.2019.06.013}
+}
+
+@article{Monroe2005,
+  title   = {The Impact of Elastic Deformation on Deposition Kinetics at Lithium/Polymer Interfaces},
+  author  = {Monroe, Charles and Newman, John},
+  journal = {Journal of the Electrochemical Society},
+  year    = {2005},
+  volume  = {152},
+  pages   = {A396--A404},
+  doi     = {10.1149/1.1850854},
+  url     = {https://doi.org/10.1149/1.1850854}
+}
+
+@article{Yu2018,
+  title   = {Grain Boundary Softening: A Potential Mechanism for Lithium Metal Penetration through Stiff Solid Electrolytes},
+  author  = {Yu, Seungho and Siegel, Donald J.},
+  journal = {ACS Applied Materials \& Interfaces},
+  year    = {2018},
+  volume  = {10},
+  pages   = {38151--38158},
+  doi     = {10.1021/acsami.8b17223},
+  url     = {https://doi.org/10.1021/acsami.8b17223}
+}
+
+@article{Cheng2017,
+  title   = {Intergranular {Li} metal propagation through polycrystalline {Li$_{6.25}$Al$_{0.25}$La$_3$Zr$_2$O$_{12}$} ceramic electrolyte},
+  author  = {Cheng, Emily J. and Taylor, Nathan J. and Wolfenstine, Jeff and Sakamoto, Jeff},
+  journal = {Electrochimica Acta},
+  year    = {2017},
+  volume  = {223},
+  pages   = {85--91},
+  doi     = {10.1016/j.electacta.2016.10.098},
+  url     = {https://doi.org/10.1016/j.electacta.2016.10.098}
+}
+
+%% Short key alias for Canepa2018LLZO
+@article{Canepa2018,
+  title   = {Particle Morphology and Lithium Segregation to Surfaces of the {Li$_7$La$_3$Zr$_2$O$_{12}$} Solid Electrolyte},
+  author  = {Canepa, Pieremanuele and Dawson, James A. and Sai Gautam, Gopalakrishnan and Statham, Jacqueline M. and Parker, Stephen C. and Islam, M. Saiful},
+  journal = {Chemistry of Materials},
+  year    = {2018},
+  volume  = {30},
+  pages   = {3019--3027},
+  doi     = {10.1021/acs.chemmater.8b00649},
+  url     = {https://doi.org/10.1021/acs.chemmater.8b00649}
+}
+
+@article{Gao2020,
+  title   = {Surface-Dependent Stability of the Interface between Garnet {Li$_7$La$_3$Zr$_2$O$_{12}$} and the {Li} Metal in the All-Solid-State Battery from First-Principles Calculations},
+  author  = {Gao, Bo and Jalem, Randy and Tateyama, Yoshitaka},
+  journal = {ACS Applied Materials \& Interfaces},
+  year    = {2020},
+  volume  = {12},
+  pages   = {16350--16358},
+  doi     = {10.1021/acsami.9b23019},
+  url     = {https://doi.org/10.1021/acsami.9b23019}
+}
+
+%% Short key alias for Iwasaki2022DFT_Li_LLZO_PSSB
+@article{Iwasaki2022,
+  title   = {Density Functional Theory Studies on {Li} Metal Electrode/{Garnet-Type} {Li$_7$La$_3$Zr$_2$O$_{12}$} Solid Electrolyte Interfaces for Application in All-Solid-State Batteries},
+  author  = {Iwasaki, Rinon and Ishida, Kunihiro and Yasuda, Risa and Nakano, Koki and Tanibata, Naoto and Takeda, Hayami and Nakayama, Masanobu and Watanabe, Naoki},
+  journal = {physica status solidi (b)},
+  year    = {2022},
+  volume  = {259},
+  pages   = {2100546},
+  doi     = {10.1002/pssb.202100546},
+  url     = {https://doi.org/10.1002/pssb.202100546}
+}
+
+%% Short key alias for Iwasaki2024UNNP_LLZOLi
+@article{Iwasaki2024,
+  title   = {Universal-neural-network-potential molecular dynamics for lithium metal and garnet-type solid electrolyte interface},
+  author  = {Iwasaki, Rinon and Tanibata, Naoto and Takeda, Hayami and Nakayama, Masanobu},
+  journal = {Communications Materials},
+  year    = {2024},
+  volume  = {5},
+  pages   = {148},
+  doi     = {10.1038/s43246-024-00595-0},
+  url     = {https://doi.org/10.1038/s43246-024-00595-0}
+}
+
+%% --- DFT for interfaces ---
+
+@article{Butler2019,
+  title   = {Designing interfaces in energy materials applications with first-principles calculations},
+  author  = {Butler, Keith T. and Sai Gautam, Gopalakrishnan and Canepa, Pieremanuele},
+  journal = {npj Computational Materials},
+  year    = {2019},
+  volume  = {5},
+  pages   = {19},
+  doi     = {10.1038/s41524-019-0160-9},
+  url     = {https://doi.org/10.1038/s41524-019-0160-9}
+}
+
+@article{Zur1984,
+  title   = {Lattice match: An application to heteroepitaxy},
+  author  = {Zur, Avraham and McGill, Thomas C.},
+  journal = {Journal of Applied Physics},
+  year    = {1984},
+  volume  = {55},
+  pages   = {378--386},
+  doi     = {10.1063/1.333084},
+  url     = {https://doi.org/10.1063/1.333084}
+}
+
+@article{Ong2013,
+  title   = {Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis},
+  author  = {Ong, Shyue Ping and Richards, William Davidson and Jain, Anubhav and Hautier, Geoffroy and Kocher, Michael and Cholia, Shreyas and Gunter, Dan and Chevrier, Vincent L. and Persson, Kristin A. and Ceder, Gerbrand},
+  journal = {Computational Materials Science},
+  year    = {2013},
+  volume  = {68},
+  pages   = {314--319},
+  doi     = {10.1016/j.commatsci.2012.10.028},
+  url     = {https://doi.org/10.1016/j.commatsci.2012.10.028}
+}
+
+@article{Motamarri2020,
+  title   = {{DFT-FE} -- A massively parallel adaptive finite-element code for large-scale density functional theory calculations},
+  author  = {Motamarri, Phani and Das, Sambit and Rudraraju, Shiva and Ghosh, Krishnendu and Davydov, Denis and Gavini, Vikram},
+  journal = {Computer Physics Communications},
+  year    = {2020},
+  volume  = {246},
+  pages   = {106853},
+  doi     = {10.1016/j.cpc.2019.07.016},
+  url     = {https://doi.org/10.1016/j.cpc.2019.07.016}
+}
+
+@inproceedings{Das2022,
+  title     = {Large-scale materials modeling at quantum accuracy: {Ab} initio simulations of quasicrystals and interacting extended defects in metallic alloys},
+  author    = {Das, Sambit and Bhowmik, Deepa and Motamarri, Phani and others},
+  booktitle = {Proceedings of SC22: International Conference for High Performance Computing, Networking, Storage and Analysis},
+  year      = {2022},
+  doi       = {10.1109/SC41404.2022.00012},
+  url       = {https://doi.org/10.1109/SC41404.2022.00012}
+}
+
+@inproceedings{Das2023gordon,
+  title     = {Large-scale materials modeling at quantum accuracy: {Ab} initio simulations of quasicrystals and interacting extended defects in metallic alloys},
+  author    = {Das, Sambit and Motamarri, Phani and Ghosh, Krishnendu and Pask, John E. and Gavini, Vikram},
+  booktitle = {Proceedings of SC23: International Conference for High Performance Computing, Networking, Storage and Analysis},
+  year      = {2023},
+  doi       = {10.1145/3581784.3627037},
+  url       = {https://doi.org/10.1145/3581784.3627037}
+}
+
+%% --- MLIP architectures ---
+
+@article{Drautz2019,
+  title   = {Atomic cluster expansion for accurate and transferable interatomic potentials},
+  author  = {Drautz, Ralf},
+  journal = {Physical Review B},
+  year    = {2019},
+  volume  = {99},
+  pages   = {014104},
+  doi     = {10.1103/PhysRevB.99.014104},
+  url     = {https://doi.org/10.1103/PhysRevB.99.014104}
+}
+
+%% Short alias for Batzner2022NequIP
+@article{Batzner2022,
+  title   = {{E(3)}-equivariant graph neural networks for data-efficient and accurate interatomic potentials},
+  author  = {Batzner, Simon and Musaelian, Albert and Sun, Lixin and Geiger, Mario and Mailoa, Jonathan P. and Kornbluth, Mordechai and Molinari, Nicola and Smidt, Tess E. and Kozinsky, Boris},
+  journal = {Nature Communications},
+  year    = {2022},
+  volume  = {13},
+  pages   = {2453},
+  doi     = {10.1038/s41467-022-29939-5},
+  url     = {https://doi.org/10.1038/s41467-022-29939-5}
+}
+
+%% Short alias for Musaelian2023Allegro
+@article{Musaelian2023,
+  title   = {Learning local equivariant representations for large-scale atomistic dynamics},
+  author  = {Musaelian, Albert and Batzner, Simon and Johansson, Anders and Sun, Lixin and Owen, Cameron J. and Kornbluth, Mordechai and Kozinsky, Boris},
+  journal = {Nature Communications},
+  year    = {2023},
+  volume  = {14},
+  pages   = {579},
+  doi     = {10.1038/s41467-023-36329-y},
+  url     = {https://doi.org/10.1038/s41467-023-36329-y}
+}
+
+%% Short alias for Batatia2022MACE
+@inproceedings{Batatia2022,
+  title     = {{MACE}: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields},
+  author    = {Batatia, Ilyes and Kov{\'a}cs, D{\'a}vid P{\'e}ter and Simm, Gregor N. C. and Ortner, Christoph and Cs{\'a}nyi, G{\'a}bor},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2022},
+  doi       = {10.48550/arXiv.2206.07697},
+  url       = {https://arxiv.org/abs/2206.07697}
+}
+
+%% Short alias for Batatia2025DesignSpace
+@article{Batatia2022design,
+  title   = {The design space of {E(3)}-equivariant atom-centred interatomic potentials},
+  author  = {Batatia, Ilyes and Batzner, Simon and Kov{\'a}cs, D{\'a}vid P{\'e}ter and Musaelian, Albert and Simm, Gregor N. C. and Drautz, Ralf and Ortner, Christoph and Kozinsky, Boris and Cs{\'a}nyi, G{\'a}bor},
+  journal = {Nature Machine Intelligence},
+  year    = {2025},
+  volume  = {7},
+  pages   = {56--67},
+  doi     = {10.1038/s42256-024-00956-x},
+  url     = {https://doi.org/10.1038/s42256-024-00956-x}
+}
+
+%% Short aliases for foundation models
+@article{Chen2022,
+  title   = {A universal graph deep learning interatomic potential for the periodic table},
+  author  = {Chen, Chi and Ong, Shyue Ping},
+  journal = {Nature Computational Science},
+  year    = {2022},
+  volume  = {2},
+  pages   = {718--728},
+  doi     = {10.1038/s43588-022-00349-3},
+  url     = {https://doi.org/10.1038/s43588-022-00349-3}
+}
+
+@article{Deng2023chgnet,
+  title   = {{CHGNet} as a pretrained universal neural network potential for charge-informed atomistic modelling},
+  author  = {Deng, Bowen and Zhong, Peichen and Jun, KyuJung and Riebesell, Janosh and Han, Kevin and Bartel, Christopher J. and Ceder, Gerbrand},
+  journal = {Nature Machine Intelligence},
+  year    = {2023},
+  volume  = {5},
+  pages   = {1031--1041},
+  doi     = {10.1038/s42256-023-00716-3},
+  url     = {https://doi.org/10.1038/s42256-023-00716-3}
+}
+
+@misc{Batatia2023foundation,
+  title        = {A foundation model for atomistic materials chemistry},
+  author       = {Batatia, Ilyes and Benner, Philipp and Chiang, Yuan and Elena, Alin M. and Kov{\'a}cs, D{\'a}vid P. and Riebesell, Janosh and others},
+  year         = {2023},
+  eprint       = {2401.00096},
+  archivePrefix= {arXiv},
+  doi          = {10.48550/arXiv.2401.00096},
+  url          = {https://arxiv.org/abs/2401.00096}
+}
+
+%% Short aliases for validation papers
+@article{Deng2025,
+  title   = {Systematic softening in universal machine learning interatomic potentials},
+  author  = {Deng, Bowen and Choi, Yunyeong and Zhong, Peichen and Riebesell, Janosh and Anand, Shashwat and Li, Zhuohan and Jun, KyuJung and Persson, Kristin A. and Ceder, Gerbrand},
+  journal = {npj Computational Materials},
+  year    = {2025},
+  volume  = {11},
+  pages   = {9},
+  doi     = {10.1038/s41524-024-01500-6},
+  url     = {https://doi.org/10.1038/s41524-024-01500-6}
+}
+
+@article{Liu2023,
+  title   = {Discrepancies and error evaluation metrics for machine learning interatomic potentials},
+  author  = {Liu, Yunsheng and He, Xingfeng and Mo, Yifei},
+  journal = {npj Computational Materials},
+  year    = {2023},
+  volume  = {9},
+  pages   = {174},
+  doi     = {10.1038/s41524-023-01123-3},
+  url     = {https://doi.org/10.1038/s41524-023-01123-3}
+}
+
+@article{Morrow2023,
+  title   = {How to validate machine-learned interatomic potentials},
+  author  = {Morrow, Joe D. and Gardner, John L. A. and Deringer, Volker L.},
+  journal = {The Journal of Chemical Physics},
+  year    = {2023},
+  volume  = {158},
+  pages   = {121501},
+  doi     = {10.1063/5.0139611},
+  url     = {https://doi.org/10.1063/5.0139611}
+}
+
+%% Forces are not enough benchmark
+@article{Fu2023,
+  title   = {Forces are Not Enough: Benchmark and Critical Evaluation for Machine Learning Force Fields with Molecular Simulations},
+  author  = {Fu, Xiang and Wu, Zhenghao and Wang, Wujie and Xie, Tian and Keten, Sinan and Gomez-Bombarelli, Rafael and Jaakkola, Tommi},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2023},
+  note    = {arXiv:2210.07237},
+  url     = {https://arxiv.org/abs/2210.07237}
+}
+
+%% RDF anomaly detection
+@article{Watanabe2024,
+  title   = {Machine-learning interatomic potential with anomaly detection for molecular dynamics of solids},
+  author  = {Watanabe, Shinichi and Miwa, Kazuaki and Hayashi, Hiori and Ohwaki, Tsuyoshi and Morishita, Tetsuya and Kobayashi, Ryo},
+  journal = {Physical Review Materials},
+  year    = {2024},
+  volume  = {8},
+  pages   = {015003},
+  doi     = {10.1103/PhysRevMaterials.8.015003},
+  url     = {https://doi.org/10.1103/PhysRevMaterials.8.015003}
+}
+
+%% BarrierEval2026 short alias
+@article{Bheemagulia2026,
+  title   = {Evaluation of foundational machine learned interatomic potentials for migration barrier predictions},
+  author  = {others},
+  journal = {Digital Discovery},
+  year    = {2026},
+  doi     = {10.1039/d5dd00534e},
+  url     = {https://pubs.rsc.org/en/content/articlelanding/2026/dd/d5dd00534e},
+  note    = {Author list incomplete; retrieve from RSC before submission}
+}
+
+%% --- Active learning ---
+
+@article{Zhang2020,
+  title   = {{DP-GEN}: A concurrent learning platform for the generation of reliable deep learning based potential energy models},
+  author  = {Zhang, Yuzhi and Wang, Haidi and Chen, Weijie and Zeng, Jinzhe and Zhang, Linfeng and Wang, Han and E, Weinan},
+  journal = {Computer Physics Communications},
+  year    = {2020},
+  volume  = {253},
+  pages   = {107206},
+  doi     = {10.1016/j.cpc.2020.107206},
+  url     = {https://doi.org/10.1016/j.cpc.2020.107206}
+}
+
+%% Short aliases for AL papers
+@article{Vandermause2020,
+  title   = {On-the-fly active learning of interpretable {Bayesian} force fields for atomistic rare events},
+  author  = {Vandermause, Jonathan and Torrisi, Steven B. and Batzner, Simon and Xie, Yu and Sun, Lixin and Kolpak, Alexie M. and Kozinsky, Boris},
+  journal = {npj Computational Materials},
+  year    = {2020},
+  volume  = {6},
+  pages   = {20},
+  doi     = {10.1038/s41524-020-0283-z},
+  url     = {https://doi.org/10.1038/s41524-020-0283-z}
+}
+
+@article{Vandermause2022,
+  title   = {Active learning of reactive {Bayesian} force fields applied to heterogeneous catalysis dynamics of {H/Pt}},
+  author  = {Vandermause, Jonathan and Xie, Yu and Lim, Jin Soo and Owen, Cameron J. and Kozinsky, Boris},
+  journal = {Nature Communications},
+  year    = {2022},
+  volume  = {13},
+  pages   = {5183},
+  doi     = {10.1038/s41467-022-32294-0},
+  url     = {https://doi.org/10.1038/s41467-022-32294-0}
+}
+
+@article{Wen2020,
+  title   = {Uncertainty quantification in molecular simulations with dropout neural network potentials},
+  author  = {Wen, Mingjian and Tadmor, Ellad B.},
+  journal = {npj Computational Materials},
+  year    = {2020},
+  volume  = {6},
+  pages   = {124},
+  doi     = {10.1038/s41524-020-00390-8},
+  url     = {https://doi.org/10.1038/s41524-020-00390-8}
+}
+
+@inproceedings{Lakshminarayanan2017,
+  title     = {Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles},
+  author    = {Lakshminarayanan, Balaji and Pritzel, Alexander and Blundell, Charles},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2017},
+  volume    = {30},
+  url       = {https://arxiv.org/abs/1612.01474}
+}
+
+@article{Tan2023,
+  title   = {Single-model uncertainty quantification in neural network potentials does not consistently outperform model ensembles},
+  author  = {Tan, Andrew R. and Urata, Shingo and Goldman, Samuel and Dietschreit, Johannes C. B. and G{\'o}mez-Bombarelli, Rafael},
+  journal = {npj Computational Materials},
+  year    = {2023},
+  volume  = {9},
+  pages   = {225},
+  doi     = {10.1038/s41524-023-01180-8},
+  url     = {https://doi.org/10.1038/s41524-023-01180-8}
+}
+
+@article{Cersonsky2021,
+  title   = {Improving sample and feature selection with principal covariates regression},
+  author  = {Cersonsky, Rose K. and Helfrecht, Benjamin A. and Engel, Edgar A. and Kliavinek, Sergei and Ceriotti, Michele},
+  journal = {Machine Learning: Science and Technology},
+  year    = {2021},
+  volume  = {2},
+  pages   = {035038},
+  doi     = {10.1088/2632-2153/abfe7c},
+  url     = {https://doi.org/10.1088/2632-2153/abfe7c}
+}
+
+@article{Imbalzano2018,
+  title   = {Automatic selection of atomic fingerprints and reference configurations for machine-learning potentials},
+  author  = {Imbalzano, Giulio and Anelli, Andrea and Giofr{\'e}, Davide and Klees, Senja and Behler, J{\"o}rg and Ceriotti, Michele},
+  journal = {The Journal of Chemical Physics},
+  year    = {2018},
+  volume  = {148},
+  pages   = {241730},
+  doi     = {10.1063/1.5024611},
+  url     = {https://doi.org/10.1063/1.5024611}
+}
+
+@article{Qi2024,
+  title   = {Robust training of machine learning interatomic potentials with dimensionality reduction and stratified sampling},
+  author  = {Qi, Ji and Ko, Tsz Wai and Wood, Brandon C. and Pham, Tuan Anh and Ong, Shyue Ping},
+  journal = {npj Computational Materials},
+  year    = {2024},
+  volume  = {10},
+  pages   = {43},
+  doi     = {10.1038/s41524-024-01227-4},
+  url     = {https://doi.org/10.1038/s41524-024-01227-4}
+}
+
+@article{Kulichenko2023,
+  title   = {Uncertainty-driven dynamics for active learning of interatomic potentials},
+  author  = {Kulichenko, Maksim and Barros, Kipton and Lubbers, Nicholas and Li, Ying Wai and Messerly, Richard A. and Nebgen, Benjamin and Smith, Justin S. and Tretiak, Sergei},
+  journal = {Nature Computational Science},
+  year    = {2023},
+  volume  = {3},
+  pages   = {230--239},
+  doi     = {10.1038/s43588-023-00406-5},
+  url     = {https://doi.org/10.1038/s43588-023-00406-5}
+}
+
+@article{Zaverkin2024,
+  title   = {Uncertainty-biased molecular dynamics for learning uniformly accurate interatomic potentials},
+  author  = {Zaverkin, Viktor and Holzm{\"u}ller, David and Christiansen, Henrik and Errica, Federico and Alesiani, Francesco and Takamoto, Makoto and Niepert, Mathias and K{\"a}stner, Johannes},
+  journal = {npj Computational Materials},
+  year    = {2024},
+  volume  = {10},
+  pages   = {83},
+  doi     = {10.1038/s41524-024-01254-1},
+  url     = {https://doi.org/10.1038/s41524-024-01254-1}
+}
+
+@article{Kulichenko2024review,
+  title   = {Data Generation for Machine Learning Interatomic Potentials and Beyond},
+  author  = {Kulichenko, Maksim and Nebgen, Benjamin and Lubbers, Nicholas and Smith, Justin S. and Barros, Kipton and Allen, Alice E. A. and Habib, Adela and Shinkle, Emily and Fedik, Nikita and Li, Ying Wai and Messerly, Richard A. and Tretiak, Sergei},
+  journal = {Chemical Reviews},
+  year    = {2024},
+  volume  = {124},
+  pages   = {13681--13714},
+  doi     = {10.1021/acs.chemrev.4c00572},
+  url     = {https://doi.org/10.1021/acs.chemrev.4c00572}
+}
+
+%% --- Fine-tuning ---
+
+@article{Kirkpatrick2017,
+  title   = {Overcoming catastrophic forgetting in neural networks},
+  author  = {Kirkpatrick, James and Pascanu, Razvan and Rabinowitz, Neil and Veness, Joel and Desjardins, Guillaume and Rusu, Andrei A. and Milan, Kieran and Quan, John and Ramalho, Tiago and Grabska-Barwinska, Agnieszka and Hassabis, Demis and Clopath, Claudia and Kumaran, Dharshan and Hadsell, Raia},
+  journal = {Proceedings of the National Academy of Sciences},
+  year    = {2017},
+  volume  = {114},
+  pages   = {3521--3526},
+  doi     = {10.1073/pnas.1611835114},
+  url     = {https://doi.org/10.1073/pnas.1611835114}
+}
+
+@article{Kim2025,
+  title   = {An efficient forgetting-aware fine-tuning framework for pretrained universal machine-learning interatomic potentials},
+  author  = {Kim, Gyumin and others},
+  journal = {npj Computational Materials},
+  year    = {2025},
+  doi     = {10.1038/s41524-025-01895-w},
+  url     = {https://doi.org/10.1038/s41524-025-01895-w},
+  note    = {arXiv:2506.15223. Author list incomplete.}
+}
+
+@misc{Springer2025,
+  title        = {Fine-Tuning Universal Machine-Learned Interatomic Potentials: A Tutorial on Methods and Applications},
+  author       = {Springer, {\"O}mer and others},
+  year         = {2025},
+  url          = {https://arxiv.org/abs/2506.21935},
+  note         = {Preprint arXiv:2506.21935}
+}
+
+@misc{Equitrain2025,
+  title        = {Parameter-Efficient Fine-Tuning of Machine-Learning Interatomic Potentials for Phonon and Thermal Properties},
+  author       = {others},
+  year         = {2025},
+  url          = {https://arxiv.org/abs/2604.01017},
+  note         = {Preprint arXiv:2604.01017}
+}
+
+@article{Radova2025,
+  title   = {Fine-tuning foundation models of materials interatomic potentials with frozen transfer learning},
+  author  = {Radova, Lucie and others},
+  journal = {npj Computational Materials},
+  year    = {2025},
+  doi     = {10.1038/s41524-025-01727-x},
+  url     = {https://doi.org/10.1038/s41524-025-01727-x},
+  note    = {Author list incomplete.}
+}
+
+@article{Kaur2025,
+  title   = {Data-efficient fine-tuning of foundational models for first-principles quality sublimation enthalpies},
+  author  = {Kaur, Gurpreet and others},
+  journal = {Faraday Discussions},
+  year    = {2025},
+  doi     = {10.1039/D4FD00107A},
+  url     = {https://doi.org/10.1039/D4FD00107A},
+  note    = {Author list incomplete.}
+}
+
+@misc{Hanseroth2025,
+  title        = {Fine-Tuning Unifies Foundational Machine-learned Interatomic Potential Architectures at ab initio Accuracy},
+  author       = {others},
+  year         = {2025},
+  url          = {https://arxiv.org/abs/2511.05337},
+  note         = {Preprint arXiv:2511.05337}
+}
+
+@misc{Hu2021,
+  title        = {{LoRA}: Low-Rank Adaptation of Large Language Models},
+  author       = {Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zifeng and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  year         = {2021},
+  eprint       = {2106.09685},
+  archivePrefix= {arXiv},
+  doi          = {10.48550/arXiv.2106.09685},
+  url          = {https://arxiv.org/abs/2106.09685},
+  note         = {Published at ICLR 2022}
+}
+
+@article{Baxter2024,
+  title   = {Accounting for the Vibrational Contribution to the 
+             Configurational Entropy in Disordered Solids with 
+             Machine Learned Forcefields: A Case Study of Garnet 
+             Electrolyte {Li$_7$La$_3$Zr$_2$O$_{12}$}},
+  author  = {Baxter, Alexander F. and others},
+  journal = {Physical Chemistry Chemical Physics},
+  year    = {2025},
+  doi     = {10.1039/D5CP00138B},
+  note    = {Published 2025; preprint available at 
+             doi:10.26434/chemrxiv-2024-xbsdb}
+}
+
+@article{Bartok2010,
+  title   = {Gaussian Approximation Potentials: The Accuracy of 
+             Quantum Mechanics, without the Electrons},
+  author  = {Bart{\'o}k, Albert P. and Payne, Mike C. and 
+             Kondor, Risi and Cs{\'a}nyi, G{\'a}bor},
+  journal = {Physical Review Letters},
+  volume  = {104},
+  pages   = {136403},
+  year    = {2010},
+  doi     = {10.1103/PhysRevLett.104.136403}
+}
+
+@article{Zhang2018,
+  title   = {Deep Potential Molecular Dynamics: A Scalable Model 
+             with the Accuracy of Quantum Mechanics},
+  author  = {Zhang, Linfeng and Han, Jiequn and Wang, Han and 
+             Car, Roberto and E, Weinan},
+  journal = {Physical Review Letters},
+  volume  = {120},
+  pages   = {143001},
+  year    = {2018},
+  doi     = {10.1103/PhysRevLett.120.143001}
+}
